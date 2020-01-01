@@ -21,8 +21,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
-    editor.setOption('behavioursEnabled', true);
-    editor.setOption('wrapBehavioursEnabled', true);
+    editor.session.setUseWrapMode(true);
+    // editor.setOption('behavioursEnabled', true);
+    // editor.setOption('wrapBehavioursEnabled', true);
     // editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/javascript");
 </script>
