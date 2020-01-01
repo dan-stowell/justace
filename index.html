@@ -9,7 +9,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      font-size: 4vw;
+      font-size: 6vw;
     }
 </style>
 </head>
@@ -21,6 +21,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
+    editor.setOption('behavioursEnabled', true);
+    editor.setOption('wrapBehavioursEnabled', true);
     // editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/javascript");
 </script>
